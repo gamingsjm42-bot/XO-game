@@ -31,10 +31,19 @@ private:
     size_t coloumn(size_t id){ return id%int(sqrt(numberOfXos));}
     /// @brief that function returning  a button
     std::vector<QPushButton*> buttons;
+    //set all
     //set rols 
     const std::vector<const char*> rols = {"O","X"};
     //set role id
     const size_t numberOfRols = 2;
+    using Rol = enum{NONE = 0,X=1,O=2};
+    int rols(QString input)
+    {
+        //set returning
+        for (int i = 0; i < numberOfRols; i++) if(input.toStdString() == rols[i]) return i+1;
+        //returning
+        return 0;
+    }
     //set player var
     size_t player  = 0;
     /// @brief that fumctiom retiurn number
@@ -89,7 +98,6 @@ private:
                             //fix button
                             if(buttons[i]->text()==*rol) { return id;}
                         }
-                        
                     }
                     
                 }
@@ -109,7 +117,6 @@ private:
     }
     //set
     //
-
     //
     bool is_draw(){for (size_t i = 0; i < numberOfXos; i++) if(buttons[i]->text().isEmpty()) return false; return true;}
     //isEmpty
