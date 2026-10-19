@@ -1,4 +1,4 @@
-<h4>1.What is this:</h4>
+<h1>1.What is this:</h4>
 <h6>I was created a Xo game with A Script bot</h6>
 <h4>2.Why I am Do it:</h4>
 <h6>for Create app used on C++</h6>
@@ -13,3 +13,5 @@
 <h4>./economy</h4>
 <h1>4.Future Features:</h1>
 <h3>a bot with intelegent</h3>
+<h1>5.vecsion</h1>
+<h4>1.0.0</h4>
